@@ -1,0 +1,42 @@
+gslin@home [~/git/jane-street-puzzle-202501] [06:43/W5] (main) time ./dfs-optimize1
+Skip 1:
+Better solution:
+ 0  3  4  7  6  5  8  2  9
+ 7  6  9  8  2  4  0  3  5
+ 5  2  8  0  9  3  6  7  4
+ 3  4  0  6  5  7  2  9  8
+ 2  8  5  9  3  0  7  4  6
+ 6  9  7  2  4  8  3  5  0
+ 8  5  2  3  0  9  4  6  7
+ 4  0  6  5  7  2  9  8  3
+ 9  7  3  4  8  6  5  0  2
+maxgcd = 37
+Skip 3:
+Better solution:
+ 0  1  4  5  7  8  6  2  9
+ 6  7  9  0  2  4  1  8  5
+ 5  2  8  6  1  9  0  7  4
+ 1  4  0  7  8  5  2  9  6
+ 2  8  5  1  9  6  4  0  7
+ 7  9  6  2  4  0  8  5  1
+ 4  5  7  8  0  1  9  6  2
+ 8  6  1  9  5  2  7  4  0
+ 9  0  2  4  6  7  5  1  8
+maxgcd = 111
+Skip 4:
+Better solution:
+ 3  9  5  0  6  1  7  2  8
+ 0  6  1  7  2  8  3  9  5
+ 7  2  8  3  9  5  0  6  1
+ 9  5  0  6  1  7  2  8  3
+ 2  8  3  9  5  0  6  1  7
+ 6  1  7  2  8  3  9  5  0
+ 8  3  9  5  0  6  1  7  2
+ 5  0  6  1  7  2  8  3  9
+ 1  7  2  8  3  9  5  0  6
+maxgcd = 12345679
+Skip 6:
+Skip 7:
+Skip 8:
+Skip 9:
+./dfs-optimize1  362.30s user 0.01s system 99% cpu 6:02.36 total
