@@ -34,7 +34,7 @@ int gcd(int a, int b)
 void init(char m[N][N])
 {
     // init
-    memset(m, -1, sizeof(*m));
+    memset(m, -1, sizeof(m[0][0]) * N * N);
 
     m[7][0] = 2;
     m[8][1] = 5;
