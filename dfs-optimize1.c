@@ -87,6 +87,7 @@ void dfs(const int position)
     if (verbose && depth == position) {
         printf("Not solution: (current maxgcd = %d)\n", maxgcd);
         dump(m);
+        printf("Current gcd = %d\n", row2gcd(m, depth / N));
     }
 
     // Fixed value.
