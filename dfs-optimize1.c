@@ -9,7 +9,6 @@
 void dfs(const int);
 
 int depth = 1;
-int depth_position = 1 * N;
 char m[N][N];
 int maxgcd = 3;
 int skip;
@@ -22,7 +21,6 @@ int main(int argc, char **argv)
         switch (c) {
         case 'd':
             depth = atoi(optarg);
-            depth_position = depth * N;
             break;
         case 'v':
             verbose = true;
@@ -86,7 +84,7 @@ void dfs(const int position)
         }
     }
 
-    if (verbose && depth_position == position) {
+    if (verbose && depth == position) {
         printf("Not solution: (current maxgcd = %d)\n", maxgcd);
         dump(m);
     }
