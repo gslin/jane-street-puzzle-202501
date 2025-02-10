@@ -46,6 +46,16 @@ void init(char m[N][N])
     m[6][8] = 5;
 }
 
+int row2gcd(const char m[N][N], const int y)
+{
+    int gcdv = row2num(m, 0);
+    for (int i = 1; i < y; i++) {
+        gcdv = gcd(gcdv, row2num(m, i));
+    }
+
+    return gcdv;
+}
+
 int row2num(const char m[N][N], const int row)
 {
     int base = 1;

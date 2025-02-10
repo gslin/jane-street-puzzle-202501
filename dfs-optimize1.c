@@ -65,11 +65,7 @@ void dfs(const int position)
 {
     // Valid case.
     if (N * N == position) {
-        int gcdv = row2num(m, 0);
-        for (int i = 1; i < N; i++) {
-            gcdv = gcd(gcdv, row2num(m, i));
-        }
-
+        int gcdv = row2gcd(m, N);
         if (gcdv > maxgcd) {
             maxgcd = gcdv;
             printf("Solution:\n");
@@ -84,11 +80,7 @@ void dfs(const int position)
     const int y = position / N;
 
     if (0 == x && y > 0) {
-        int gcdv = row2num(m, 0);
-        for (int i = 1; i < y; i++) {
-            gcdv = gcd(gcdv, row2num(m, i));
-        }
-
+        int gcdv = row2gcd(m, y);
         if (gcdv <= maxgcd) {
             return;
         }
