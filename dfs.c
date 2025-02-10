@@ -1,17 +1,35 @@
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "common.h"
 
 void dfs(const int);
 
+int depth = 1;
+int depth_position = 1 * N;
 char m[N][N];
-int maxgcd = 1;
+int maxgcd = 3;
 int skip;
+bool verbose = false;
 
-int main()
+int main(int argc, char **argv)
 {
+    int c;
+    while ((c = getopt(argc, argv, "d:v")) != -1) {
+        switch (c) {
+        case 'd':
+            depth = atoi(optarg);
+            depth_position = depth * N;
+            break;
+        case 'v':
+            verbose = true;
+            break;
+        }
+    }
+
     init(m);
 
     skip = 1;
@@ -64,6 +82,11 @@ void dfs(const int position)
 
     const int x = position % N;
     const int y = position / N;
+
+    if (verbose && depth_position == position) {
+        printf("Not solution: (current maxgcd = %d)\n", maxgcd);
+        dump(m);
+    }
 
     // Fixed value.
     if (m[x][y] >= 0) {
