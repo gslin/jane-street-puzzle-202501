@@ -10,7 +10,7 @@ void dfs(const int);
 
 int depth = 1;
 char m[N][N];
-int maxgcd = 3;
+int maxgcd = 1;
 int skip;
 bool verbose = false;
 
