@@ -7,8 +7,8 @@
 	${CC} ${CFLAGS} -c $<
 
 #
-CFLAGS?=	-O2 -g
-LDFLAGS?=	-O2 -g
+CFLAGS?=	-O2
+LDFLAGS?=	-O2
 
 all:: dfs dfs-optimize1
 
