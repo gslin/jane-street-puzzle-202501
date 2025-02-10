@@ -66,9 +66,9 @@ void dfs(const int position)
         int gcdv = rows2gcd(m, N);
         if (gcdv > maxgcd) {
             maxgcd = gcdv;
-            printf("Solution:\n");
+            printf("Better solution:\n");
             dump(m);
-            printf("gcd = %d\n", gcdv);
+            printf("maxgcd = %d\n", maxgcd);
         }
 
         return;
