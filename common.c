@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #include "common.h"
 
@@ -28,6 +29,21 @@ int gcd(int a, int b)
     }
 
     return a;
+}
+
+void init(char m[N][N])
+{
+    // init
+    memset(m, -1, sizeof(*m));
+
+    m[7][0] = 2;
+    m[8][1] = 5;
+    m[1][2] = 2;
+    m[2][3] = 0;
+    m[3][5] = 2;
+    m[4][6] = 0;
+    m[5][7] = 2;
+    m[6][8] = 5;
 }
 
 int row2num(char m[N][N], const int row)
