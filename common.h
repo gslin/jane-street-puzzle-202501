@@ -7,7 +7,7 @@
 void dump(const char [N][N]);
 int gcd(int, int);
 void init(char [N][N]);
-int row2gcd(const char [N][N], const int);
 int row2num(const char [N][N], const int);
+int rows2gcd(const char [N][N], const int);
 
 #endif

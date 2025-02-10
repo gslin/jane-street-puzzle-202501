@@ -63,7 +63,7 @@ void dfs(const int position)
 {
     // Valid case.
     if (N * N == position) {
-        int gcdv = row2gcd(m, N);
+        int gcdv = rows2gcd(m, N);
         if (gcdv > maxgcd) {
             maxgcd = gcdv;
             printf("Solution:\n");
@@ -80,7 +80,7 @@ void dfs(const int position)
     if (verbose && depth == position) {
         printf("Not solution: (current maxgcd = %d)\n", maxgcd);
         dump(m);
-        printf("Current gcd = %d\n", row2gcd(m, depth / N));
+        printf("Current gcd = %d\n", rows2gcd(m, depth / N));
     }
 
     // Fixed value.
