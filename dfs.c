@@ -18,14 +18,14 @@ int main()
     // init
     memset(m, -1, sizeof(m));
 
-    m[0][7] = 2;
-    m[1][8] = 5;
-    m[2][1] = 2;
-    m[3][2] = 0;
-    m[5][3] = 2;
-    m[6][4] = 0;
-    m[7][5] = 2;
-    m[8][6] = 5;
+    m[7][0] = 2;
+    m[8][1] = 5;
+    m[1][2] = 2;
+    m[2][3] = 0;
+    m[3][5] = 2;
+    m[4][6] = 0;
+    m[5][7] = 2;
+    m[6][8] = 5;
 
     dfs(0);
 }
@@ -108,9 +108,9 @@ void dfs(const int position)
 
 void dump()
 {
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            printf("%2d ", m[i][j]);
+    for (int y = 0; y < N; y++) {
+        for (int x = 0; x < N; x++) {
+            printf("%2d ", m[x][y]);
         }
         printf("\n");
     }
