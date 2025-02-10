@@ -8,7 +8,7 @@ This repository is to solve Jane Street's puzzle (2025/01).
 
 Solving with a DFS-based brute force algorithm.
 
-* `-d 1`: Show matrix during specific position.
+* `-d 1`: Show matrix during specific iterating position.  Requires `-v` to be enabled.
 * `-v`: Verbose.
 
 ### dfs-optimize1.c
@@ -17,7 +17,7 @@ Still a DFS-based brute force algorithm, but add some optimization to bypass unn
 
 Benchmark can be obtained from [dfs-optimize1.txt](https://github.com/gslin/jane-street-puzzle-202501/blob/master/dfs-optimize1.txt).
 
-* `-d 1`: Show matrix during specific position.
+* `-d 1`: Show matrix during specific iterating position.  Requires `-v` to be enabled.
 * `-v`: Verbose.
 
 ## Links
