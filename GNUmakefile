@@ -1,5 +1,6 @@
 #
 .DEFAULT_GOAL:=		all
+.PHONY:			all clean
 
 #
 .c.o:
