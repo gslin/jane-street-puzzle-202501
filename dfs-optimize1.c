@@ -48,6 +48,22 @@ void dfs(const int position)
     const int x = position % N;
     const int y = position / N;
 
+    if (0 == x && y > 0) {
+        int gcdv = row2num(m, 0);
+        for (int i = 1; i < y; i++) {
+            gcdv = gcd(gcdv, row2num(m, i));
+        }
+
+        if (gcdv <= maxgcd) {
+            return;
+        }
+    }
+
+    if (N * 3 == position) {
+        printf("Not solution:\n");
+        dump(m);
+    }
+
     // Fixed value.
     if (m[x][y] >= 0) {
         dfs(position + 1);
