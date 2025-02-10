@@ -13,7 +13,7 @@ Solving with a DFS-based brute force algorithm.
 
 ### dfs-optimize1.c
 
-Still a DFS-based brute force algorithm, but add some optimization to bypass unnecessary recursive calls.
+Still solving with a DFS-based brute force algorithm, but add some optimization to bypass unnecessary recursive calls.
 
 Benchmark can be obtained from [dfs-optimize1.txt](https://github.com/gslin/jane-street-puzzle-202501/blob/master/dfs-optimize1.txt).
 
