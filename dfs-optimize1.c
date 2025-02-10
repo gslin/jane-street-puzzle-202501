@@ -77,7 +77,7 @@ void dfs(const int position)
     const int x = position % N;
     const int y = position / N;
 
-    if (0 == x && y > 0) {
+    if (0 == x && y > 1) {
         int gcdv = rows2gcd(m, y);
         if (gcdv <= maxgcd) {
             return;
