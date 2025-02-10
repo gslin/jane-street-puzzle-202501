@@ -12,6 +12,8 @@ Brute force algorithm by DFS.
 
 Still brute force algorithm by DFS, but add some optimization to bypass unnecessary recursive calls.
 
+Benchmark can be obtained from [dfs-optimize1.txt](https://github.com/gslin/jane-street-puzzle-202501/blob/master/dfs-optimize1.txt).
+
 ## Links
 
 * https://www.janestreet.com/puzzles/somewhat-square-sudoku-index/
