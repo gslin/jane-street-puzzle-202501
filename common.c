@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-void dump(char m[N][N])
+void dump(const char m[N][N])
 {
     for (int y = 0; y < N; y++) {
         for (int x = 0; x < N; x++) {
@@ -46,7 +46,7 @@ void init(char m[N][N])
     m[6][8] = 5;
 }
 
-int row2num(char m[N][N], const int row)
+int row2num(const char m[N][N], const int row)
 {
     int base = 1;
     int num = 0;
