@@ -8,7 +8,7 @@
 
 void dfs(const int);
 
-int depth = 1;
+int depth = 9;
 char m[N][N];
 int maxgcd = 1;
 int skip;
