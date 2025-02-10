@@ -8,10 +8,31 @@ void dfs(const int);
 
 char m[N][N];
 int maxgcd = 1;
+int skip;
 
 int main()
 {
     init(m);
+
+    skip = 1;
+    dfs(0);
+
+    skip = 3;
+    dfs(0);
+
+    skip = 4;
+    dfs(0);
+
+    skip = 6;
+    dfs(0);
+
+    skip = 7;
+    dfs(0);
+
+    skip = 8;
+    dfs(0);
+
+    skip = 9;
     dfs(0);
 }
 
@@ -47,6 +68,10 @@ void dfs(const int position)
     const int block_y = y - y % 3;
 
     for (int n = 0; n < MAXV; n++) {
+        if (n == skip) {
+            continue;
+        }
+
         // Check whether `n` is used in x-axis and y-axis.
         bool used = false;
 
