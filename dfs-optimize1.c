@@ -69,11 +69,6 @@ void dfs(const int position)
         }
     }
 
-    if (N * 3 == position) {
-        printf("Not solution:\n");
-        dump(m);
-    }
-
     // Fixed value.
     if (m[x][y] >= 0) {
         dfs(position + 1);
