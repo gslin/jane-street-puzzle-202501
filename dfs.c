@@ -49,8 +49,8 @@ void dfs(const int position)
         return;
     }
 
-    const int x = position / N;
-    const int y = position % N;
+    const int x = position % N;
+    const int y = position / N;
 
     // Fixed value.
     if (m[x][y] >= 0) {
