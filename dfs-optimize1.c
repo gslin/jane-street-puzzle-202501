@@ -15,24 +15,31 @@ int main()
     init(m);
 
     skip = 1;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 3;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 4;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 6;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 7;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 8;
+    printf("Skip %d:\n", skip);
     dfs(0);
 
     skip = 9;
+    printf("Skip %d:\n", skip);
     dfs(0);
 }
 
