@@ -52,7 +52,7 @@ int row2num(const char m[N][N], const int row)
     int num = 0;
 
     for (int i = N - 1; i >= 0; i--) {
-        num += m[row][i] * base;
+        num += m[i][row] * base;
         base *= 10;
     }
 
