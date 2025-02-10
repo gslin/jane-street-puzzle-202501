@@ -6,13 +6,19 @@ This repository is to solve Jane Street's puzzle (2025/01).
 
 ### dfs.c
 
-Brute force algorithm by DFS.
+Solving with a DFS-based brute force algorithm.
+
+* `-d 1`: Show matrix during specific position.
+* `-v`: Verbose.
 
 ### dfs-optimize1.c
 
-Still brute force algorithm by DFS, but add some optimization to bypass unnecessary recursive calls.
+Still a DFS-based brute force algorithm, but add some optimization to bypass unnecessary recursive calls.
 
 Benchmark can be obtained from [dfs-optimize1.txt](https://github.com/gslin/jane-street-puzzle-202501/blob/master/dfs-optimize1.txt).
+
+* `-d 1`: Show matrix during specific position.
+* `-v`: Verbose.
 
 ## Links
 
