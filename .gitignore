@@ -1,3 +1,4 @@
 *.o
 dfs
 dfs-optimize1
+factors

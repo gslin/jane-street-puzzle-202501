@@ -6,7 +6,7 @@ This repository is to solve Jane Street's puzzle (2025/01).
 
 ### dfs.c
 
-Solving with a DFS-based brute force algorithm.
+Solving with a DFS-based brute force algorithm.  Since {0,2,5} are fixed showing numbers, we can enumerate {1,3,4,6,7,8,9} as the skip number.
 
 Btw, I can't get any results after 12hours running.
 
