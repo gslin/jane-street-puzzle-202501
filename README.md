@@ -15,7 +15,7 @@ Btw, I can't get any results after 12hours running.
 
 ### dfs-optimize1.c
 
-Still solving with the previous DFS-based brute force algorithm, but add some optimization to bypass unnecessary recursive calls.
+Still solving with the previous DFS-based brute force algorithm, but add a little optimization to bypass unnecessary recursive calls: if the GCD of existing rows are already smaller or equal than the current maxgcd, then we don't need to compute any further rows.
 
 It runs ~6mins on my Intel 8300T.  Benchmark can be obtained from [dfs-optimize1.txt](https://github.com/gslin/jane-street-puzzle-202501/blob/main/dfs-optimize1.txt).
 
