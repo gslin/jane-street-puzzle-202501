@@ -1,5 +1,7 @@
 #include "common.h"
 
+#define FACTORARRAY_MAXLENGTH 10
+
 char m[N][N];
 
 int main(int argc, char **argv)
@@ -55,4 +57,21 @@ int main(int argc, char **argv)
      * digit of all rows are either 5 or 0.  Both cannot form a valid
      * puzzie.
      */
+
+    /**
+     * List all "possible" factors of (45-n)*111111111, in our case we
+     * only need to enumerate 1,3,4,6,8,8,9.
+     *
+     * We skip 2 and 5 as they're impossible for GCD to be a prime
+     * factor, as mentioned in previous description.
+     */
+    const int prime_factors[][FACTORARRAY_MAXLENGTH] = {
+        {1, 4, 3, 2, 11, 1, 37, 1, 333679, 1},  // skip 1, 4 groups: 3^2 * 11^1 * 37^1 * 333679^1
+        {3, 4, 3, 3, 7, 1, 37, 1, 333679, 1},   // skip 3, 4 groups: 3^3 * 7^1 * 37^1 * 333679^1
+        {4, 4, 3, 2, 37, 1, 41, 1, 333679, 1},  // skip 4, 4 groups: 3^2 * 37^1 * 41^1 * 333679^1
+        {6, 4, 3, 3, 13, 1, 37, 1, 333679, 1},  // skip 6, 4 groups: 3^3 * 13^1 * 37^1 * 333679^1
+        {7, 4, 3, 2, 19, 1, 37, 1, 333679, 1},  // skip 7, 4 groups: 3^2 * 19^1 * 37^1 * 333679^1
+        {8, 3, 3, 2, 37, 2, 333679, 1},         // skip 8, 3 groups: 3^3 * 37^2 * 333679^1
+        {9, 3, 3, 4, 37, 1, 333679, 1}          // skip 9, 3 groups: 3^4 * 37^1 * 333679^1
+    };
 }
